@@ -16,7 +16,7 @@ ApplicationWindow {
 
     width: 320
     height: 600
-    flags: Qt.Window
+    flags: Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint | Qt.WindowCloseButtonHint
 
     minimumHeight: timerLayout.height + padding * 2 + 50
     minimumWidth: timerLayout.width + padding * 2
