@@ -15,13 +15,10 @@ ApplicationWindow {
     y: 100
 
     width: 320
-    height: 600
+    minimumWidth: 320
+    height: 640
+    minimumHeight: width + 50
     flags: Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint | Qt.WindowCloseButtonHint
-
-    minimumHeight: timerLayout.height + padding * 2 + 50
-    minimumWidth: timerLayout.width + padding * 2
-
-    maximumWidth: width
 
     color: colors.getColor("bg")
     title: qsTr("Pilorama")
